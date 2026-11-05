@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Six Choices to Dawn</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <section class="intro-panel" aria-labelledby="game-title">
+      <p class="kicker">A compact World War II adventure</p>
+      <h1 id="game-title">Six Choices to Dawn</h1>
+      <p class="lede">
+        Pick a front, make six hard calls, and see whether your squad helps push Europe closer to liberation.
+      </p>
+
+      <div class="perspective-grid" id="perspective-grid" aria-label="Choose your perspective">
+        <button class="perspective-card" data-perspective="american">
+          <span>American infantry</span>
+          <strong>Omaha Beach, Normandy</strong>
+          <small>Break through the shingle and carry the radio inland.</small>
+        </button>
+        <button class="perspective-card" data-perspective="soviet">
+          <span>Soviet rifleman</span>
+          <strong>Vistula River bridgehead</strong>
+          <small>Hold the line long enough for armor to cross.</small>
+        </button>
+        <button class="perspective-card" data-perspective="british">
+          <span>British paratrooper</span>
+          <strong>Night drop in France</strong>
+          <small>Find the resistance contact and silence a rail junction.</small>
+        </button>
+      </div>
+    </section>
+
+    <section class="story-panel" aria-live="polite">
+      <div class="status-row">
+        <p id="front-label">Choose a perspective to begin.</p>
+        <p id="choice-count">0 / 6 choices</p>
+      </div>
+
+      <article class="story-card">
+        <h2 id="scene-title">Waiting for orders</h2>
+        <p id="scene-text">
+          The map is open. The channel is clear. Choose who you are when the first order arrives.
+        </p>
+        <div class="choice-list" id="choice-list"></div>
+      </article>
+
+      <div class="log-panel">
+        <h2>Your field notes</h2>
+        <ol id="decision-log"></ol>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
